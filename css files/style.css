@@ -1,0 +1,286 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    height: 2000px;
+}
+/*s-header*/
+.navbar{
+    transition: all 1s !important;
+}
+.navbar-light .navbar-brand{
+    font-size: 30px;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, 0.767);
+    font-weight: 620;
+    font-size: 16px;
+    border-right: solid 1px black;
+    padding: 0px 10px;
+    transition: all 0.6s;
+}
+
+.navbar-light .navbar-nav .active .nav-link{
+    color: #74aa9d ;
+}
+
+.nav-onscroll{
+    background-color: #74aa9d !important;
+}
+.nav-onscroll .navbar-brand{
+    font-size: 20px;
+}
+.nav-onscroll .navbar-nav .nav-link{
+    border-right: solid 1px white;
+}
+.nav-onscroll .navbar-nav .active .nav-link{
+    color: white ;
+}
+
+.header{
+    width: 100%;
+    height: 500px;
+    padding: 40px 0 ;
+    background-image: url(../img/computer-cup-desk-drink-434337.jpg);
+    background-position-y: -40px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+/*e-header*/
+
+/*s-artical*/
+
+/*s-hash1*/
+.hash1{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    border-bottom: solid 0.5px gray;
+    padding: 150px 0;
+    z-index: 0;
+}
+@media(max-width: 992px){
+    .hash1{
+        overflow: hidden;
+        padding-top: 30px;
+    }
+    .hash1::after{
+        left: 0px !important;
+        top: 32% !important;
+    }
+    .header{
+        background-position-y: 0;
+    }
+    nav{
+        background-color: #74aa9d;
+    }
+    .navbar-light .navbar-nav .active .nav-link{
+        color: white !important;
+    }
+}
+.hash1::after{
+    content: '';
+    position: absolute;
+    top: -200px;
+    right: 0px;
+    background-image: url(../img/phone.png);
+    background-position-x: -150px;
+    background-repeat: no-repeat;
+    width: 700px;
+    height: 600px;
+    z-index: -1;
+    transform: rotateY(180deg);
+}
+.hash1 button{
+    border-radius: 25px;
+}
+.hash1 button:focus{
+    box-shadow:  0 0 2px 2px black !important;
+}
+/*e-hash1*/
+
+/*s-main-art*/
+
+.main-art p{
+
+    font-size: 18px;
+    font-weight: 450;
+    line-height: 1.5;
+}
+
+/*e-main-art*/
+
+/*s-travel section*/
+.travel{
+    position: relative;
+    font-family: cursive;
+    background-image: url(../img/travel.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 150px 0px;
+    overflow: hidden;
+}
+
+@media(min-width: 992px){
+
+    .travel::before {
+        content: '';
+        position: absolute;
+        top: -17px;
+        left: -8px;
+        background-color: white;
+        width: 51%;
+        height: 33px;
+        transform: rotate(-3deg);
+        box-shadow: 1px 11px 20px 0px white, 
+        294px 761px 0 383px #1e86af;
+        z-index: 1;
+    }
+}
+
+
+.travel h2{
+    font-size: 60px;
+}
+.travel-p{
+    padding: 100px 0px;
+    color: white;
+    background-color: rgb(30, 134, 175) ;
+}
+
+.travel-p .travel-text{
+    padding-top: 35px;
+    padding-right: 20PX;
+}
+/*e-travel section*/
+
+/*s-live*/
+.live{
+    position: relative;
+    font-family: cursive;
+    background-image: url(../img/programming.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 150px 0px;
+    overflow: hidden;
+}
+
+.live::before {
+    content: '';
+    position: absolute;
+    top: -24px;
+    left: -30px;
+    background-color: #1e86af;
+    width: 135%;
+    height: 67px;
+    transform: rotate(3deg);
+    box-shadow: 42px 346px  0 0 gray;
+}
+.live-p{
+    padding: 40px 0px;
+    color: white;
+    background-color: gray ;
+}
+.live-p .live-text{
+    padding-top: 35px;
+    padding-right: 20PX;
+}
+/*e-live*/
+
+/*s-end-section*/
+.end-section{
+    position: relative;
+    overflow: hidden;
+    height: 600px;
+    background-image: url(../img/green-succulent-plant-1031641.jpg);
+    background-position: bottom;
+    background-size: 100% 700px;
+}
+.end-section::before{
+    content: '';
+    position: absolute;
+    background-color: gray;
+    top: -53px;
+    left: -30px;
+    width: 166%;
+    height: 67px;
+    transform: rotate(-3deg);
+}
+.end-section input,
+.end-section button{
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+.end-section input:focus{
+    box-shadow: 0 0 5px 2px white;
+    border: solid 0.5px black;
+}
+
+.end-section button:hover{
+    background-color: #74aa9d;
+    color: white;
+}
+
+.end-section button:focus{
+    box-shadow: 0 0 5px 2px white;
+    background-color: #69998e;
+    color: white;
+    
+}
+/*e-end-section*/
+
+/*s-social*/
+.social{
+    position: relative;
+    padding: 50px 0 5px 0;
+    color: white;
+    background-color: #74aa9d;
+    overflow: hidden;
+}
+.social::before{
+    content: '';
+    position: absolute;
+    top: -82px;
+    left: 45%;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    transform: rotate(45deg);
+}
+.social a{
+    color: white;
+}
+.social p{
+    margin-top: 10px;
+}
+/*e-social*/
+/*e-artical*/
+
+/*s-btnup*/
+.btn-up{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(30, 134, 175,0.8);
+    padding: 10px;
+    margin: 0 15px 15px 0;
+    color: white;
+    border-radius: 5px 5px 0 0;
+    cursor: pointer;
+    visibility: hidden;
+    z-index: 100;
+}
+.btn-up-hedin{
+    visibility: visible;
+}
+/*e-btnup*/
